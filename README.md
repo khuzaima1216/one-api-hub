@@ -13,14 +13,18 @@
 - 数据导出/导入：JSON 格式
 - 仪表盘汇总：总站点数、API Key 总数、总额度与使用率
 
-### 技术栈
+## 截图
+![home](https://github.com/user-attachments/assets/936fb40d-0202-4619-973d-bd0ffa064dfb)
+![setting](https://github.com/user-attachments/assets/5fb7dd1f-67cc-414d-8d16-9c1137cddbe3)
+
+## 技术栈
 
 - 前端：React 18 + Vite + TypeScript + Radix UI + Tailwind（组件封装于 `src/components/ui`）
 - 后端：Node.js + Hono + @hono/node-server
 - 数据库：SQLite（better-sqlite3）
 - 安全：bcryptjs（密码哈希）+ jsonwebtoken（JWT）
 
-### 快速开始（本地开发）
+## 快速开始（本地开发）
 
 ```bash
 # 1. 安装依赖
@@ -37,7 +41,7 @@ npm run dev
 - 用户名：`admin`（界面仅输入密码，无需输入用户名）
 - 初始密码（开发模式）：`admin123456`
 
-### 构建与启动 (生产环境)
+## 构建与启动 (生产环境)
 
 ```bash
 # 构建（生成前端与后端产物到 dist/）
@@ -48,7 +52,7 @@ npm start
 # 生产服务默认监听 PORT（默认 8000）并同时提供静态前端
 ```
 
-### 环境变量
+## 环境变量
 
 - `PORT`：后端监听端口（默认 `8000`）
 - `NODE_ENV`：`development` 或 `production`
@@ -68,7 +72,7 @@ ADMIN_INITIAL_PASSWORD=your-strong-password
 DB_PATH=/data/data.db
 ```
 
-### Docker 一键部署
+## Docker 一键部署
 
 ```bash
 # 构建镜像
